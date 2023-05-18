@@ -3,10 +3,6 @@
   box-sizing: border-box;
 }
 
-*:focus {
-  outline: 2px auto;
-  outline-offset: 2px;
-}
 
 html {
   scroll-behavior: smooth;
@@ -24,6 +20,12 @@ body {
 img {
   min-width: 100%;
   height: auto;
+}
+
+/* OUTLINE STYLES */
+*:focus {
+  outline: 2px dashed #7296EC;
+  outline-offset: 3px;
 }
 
 /* BUTTON */
@@ -70,6 +72,7 @@ img {
 .site-header-top {
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-bottom: 10px;
   background-color: #F6F6F6;
 }
 .site-header-top-container {
@@ -132,7 +135,51 @@ img {
   background-color: #fff;
   color: #000;
 }
-.button {
+
+/* SITENAV */
+.sitenav {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #d1d1d1;
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 500;
 }
-.button-primary {
+
+.sitenav-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sitenav-item {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.sitenav-item:not(:last-child) {
+  margin-right: 34px;
+}
+
+.sitenav-link {
+  display: block;
+  color: #7f7f7f;
+  text-decoration: none;
+}
+
+.sitenav-link:hover {
+  color: #7296EC
+}
+
+.sitenav-link:active {
+  opacity: 0.6;
+}
+
+/* SITE-HEADER-BANNER */
+.site-header-banner-link {
+  display: flex;
 }
