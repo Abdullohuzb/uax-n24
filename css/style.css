@@ -33,6 +33,7 @@ img {
   display: inline-block;
   padding: 13px 20px;
   border-radius: 10px;
+  border: 0;
   font-size: 16px;
   line-height: normal;
   font-weight: 500;
@@ -41,17 +42,25 @@ img {
   cursor: pointer;
 }
 
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 0.6;
+}
+
 .button-primary {
   background-color: #7296EC;
   color: #fff;
 }
 
-.button-primary:hover {
-  opacity: 0.8;
-}
 
-.button-primary:active {
-  opacity: 0.6;
+.button-orange {
+background-color: #F78B3B;
+color: #fff;
+border-radius: 10px;
+padding: 13px, 30px, 13px, 30px;
 }
 
 /* CONTAINER */
@@ -391,4 +400,21 @@ img {
   width: 25px;
   height: 25px;
   object-fit: contain;
+}
+
+/* NOTIFICATION CTA */
+.notification-cta {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 25px 70px 25px 25px;
+margin: 60px 75px;
+border-radius: 10px;
+background-color: #ffd7ba
+}
+
+.notification-cta-text {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
 }
